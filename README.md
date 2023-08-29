@@ -11,6 +11,8 @@ With that in mind, the following records the process and procedures of how this 
 (1) **Design of Game Board**
 
 Since the TicTacToe game board is in the form of a matrix with rows and columns. A 2D array of character is used to design the board so that presents a grid consisting of nine squares on the screen. Instead of simply an array or arraylist data structure, a 2D array allows to make rows and columns easily.
+
+
 <img src= "out/production/TicTacToe/.idea/number_in_grid.png" style= "width:200px;"/>
 
 (2) **Variables**
