@@ -1,5 +1,3 @@
-import java.security.KeyStore;
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,10 +7,8 @@ public class TicTacToe {
 
     public static char markOne = 'X';
     public static char markTwo = 'O';
-
     public static ArrayList<Integer> player1PosSet = new ArrayList<>();
     public static ArrayList<Integer> player2PosSet = new ArrayList<>();
-
 
     public static void main(String[] arg){
 
@@ -39,8 +35,8 @@ public class TicTacToe {
             playerOnePos(board, posOne);
             if(checkWinner()){  System.out.println("Congrats! You(Player1) Win!"); break;}
 
-
             if(checkFull(board)) {break;}
+
 
             //playerTwo
             System.out.println("(P2)Enter a number (1-9) to place your mark: ");
@@ -56,10 +52,7 @@ public class TicTacToe {
             playerTwoPos(board, posTwo);
             if(checkWinner()){ System.out.println("Congrats! You(Player2) Win!"); break;}
         }
-
-
         if(!checkWinner()){ System.out.println("It's a tie! Play again!");}
-
 
     }
 
@@ -94,6 +87,7 @@ public class TicTacToe {
         if(full == 9) { return true;} else { return false;}
     }
 
+
     public static void playerOnePos(char[][] board, int position) {
         switch(position) {
             case 1:
@@ -126,7 +120,6 @@ public class TicTacToe {
             default:
                 System.out.println("Please choose a number between 1 and 9!");
         }
-
         showGameBoard(board);
     }
 
@@ -163,10 +156,8 @@ public class TicTacToe {
             default:
                 System.out.println("Please choose a number between 1 and 9!");
         }
-
         showGameBoard(board);
     }
-
 
 
     public static Boolean checkWinner(){
@@ -198,10 +189,5 @@ public class TicTacToe {
             }
         }
         return false;
-
     }
-
-
-
-
 }
