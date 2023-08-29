@@ -6,4 +6,6 @@ The project is not intended to create a TicTacToe game for human versus computer
 
 With that in mind, the following records the process and procedures of how this game come into being on the screen using Java. 
 
-1) The design of a game board
+
+1)Design of the gameboard
+Since the gameboard is in the form of a matrix, a 2-D array instead of an array is sufficient to create the effect of square gameboard
