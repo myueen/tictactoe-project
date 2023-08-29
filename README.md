@@ -8,12 +8,12 @@ The project is not intended to create a TicTacToe game for human versus computer
 
 With that in mind, the following records the process and procedures of how this game come into being on the screen using Java. 
 
-(1) **Design of Game Board**
+(1) ###Design of Game Board
 
 Since the TicTacToe game board is in the form of a matrix with rows and columns. A 2D array of character is used to design the board so that presents a grid consisting of nine squares on the screen. Instead of simply an array or arraylist data structure, a 2D array allows to make rows and columns easily.  
 ![picture of the game board design](out/production/TicTacToe/.idea/number_in_grid.png)
 
-(2) **Variables**
+(2) ###Variables
 
 Two global variables "player1PosSet" and "player2PosSet" is created to store all the position that players mark on the game board. This two Arraylist variables allows the program to make use of the position to determine winners and potential conflicts when placing marks.
 
